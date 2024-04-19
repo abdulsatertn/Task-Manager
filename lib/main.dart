@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:task_manager/constants.dart';
 import 'package:task_manager/core/utils/app_router.dart';
-import 'package:task_manager/features/splash/splash_view.dart';
 
 void main() {
   runApp(const TaskManagerApp());
@@ -18,6 +18,7 @@ class TaskManagerApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         scaffoldBackgroundColor: kPrimaryLightColor,
+        textTheme: GoogleFonts.montserratTextTheme(ThemeData().textTheme),
       ),
     );
   }
