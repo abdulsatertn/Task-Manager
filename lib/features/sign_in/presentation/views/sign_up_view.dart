@@ -5,7 +5,7 @@ import 'package:task_manager/core/utils/app_router.dart';
 import 'package:task_manager/features/sign_in/presentation/views/widgets/custom_button.dart';
 import 'package:task_manager/features/sign_in/presentation/views/widgets/custom_text_field.dart';
 
-class SignInView extends StatelessWidget {
+class SignUpView extends StatelessWidget {
   @override
   bool isLoading = false;
 
@@ -43,7 +43,7 @@ class SignInView extends StatelessWidget {
               const Row(
                 children: [
                   Text(
-                    'LOGIN',
+                    'SIGN UP',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 24,
@@ -102,7 +102,7 @@ class SignInView extends StatelessWidget {
                 // isLoading = false;
 
                 ,
-                title: 'LOGIN',
+                title: 'SIGN UP',
               ),
               const SizedBox(
                 height: 10,
@@ -111,17 +111,17 @@ class SignInView extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const Text(
-                    'don\'t have an account?  ',
+                    'already have an account?  ',
                     style: TextStyle(
                       color: Colors.white,
                     ),
                   ),
                   GestureDetector(
                     onTap: () {
-                      GoRouter.of(context).push(AppRouter.kSignUp);
+                      GoRouter.of(context).push(AppRouter.kSignIn);
                     },
                     child: const Text(
-                      '   Register',
+                      '   Login',
                       style: TextStyle(
                         color: Color(0xffC7EDE6),
                       ),
