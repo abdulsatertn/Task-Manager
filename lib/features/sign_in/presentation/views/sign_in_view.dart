@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:task_manager/constants.dart';
 import 'package:task_manager/core/utils/app_router.dart';
+import 'package:task_manager/features/sign_in/data/repos/sign_in_repo_impl.dart';
 import 'package:task_manager/features/sign_in/presentation/views/widgets/custom_button.dart';
 import 'package:task_manager/features/sign_in/presentation/views/widgets/custom_text_field.dart';
 
@@ -74,7 +75,9 @@ class SignInView extends StatelessWidget {
                 height: 20,
               ),
               CustomButton(
-                onTap: () {}
+                onTap: () {
+                  SignInRepoImpl().signIn("atuny0", "9uQFF1Lh");
+                }
                 // () async {
                 //   if (formKey.currentState!.validate()) {
                 //     BlocProvider.of<AuthBloc>(context).add(
